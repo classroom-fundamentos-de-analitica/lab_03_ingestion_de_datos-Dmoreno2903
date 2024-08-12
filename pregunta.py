@@ -31,7 +31,7 @@ def ingest_data():
         }
 
         # Se da el formato deseado a los encabezados
-        data = {x.lower().replace(' ', '_'): line for ind, line in data.items()}
+        data = {ind.lower().replace(' ', '_'): line for ind, line in data.items()}
 
         # A partir de que comienzan los datos
         for i in range(2, len(lines)):
